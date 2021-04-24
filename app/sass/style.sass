@@ -1,0 +1,340 @@
+@import 'vars'
+@import 'fonts'
+@import 'reset'
+@import 'libs'
+@import 'global'
+
+
+
+.title
+  font-size: 56px
+  line-height: 68px
+  margin-bottom: 20px
+  font-weight: bold
+    
+.subtitle
+  font-size: 24px
+  line-height: 30px
+  margin-bottom: 16px
+  font-weight: bold
+  padding-left: 32px
+
+.label
+  font-family: 'Helvetica', sans-serif
+  font-size: 13px
+  line-height: 16px  
+
+.rout
+  padding-top: 40px
+  &__subtitle
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../images/step-1.svg')
+      width: 24px
+      height: 24px
+      left: 0
+      top: 3px
+  &__input
+    width: 728px
+    height: 44px
+    margin-bottom: 16px 
+    padding: 0 15px 0 
+    margin-top: 8px    
+
+.required
+  position: absolute
+  right: 155px
+  top: 128px
+  max-width: 308px
+  background: #4B4B4F
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+  padding: 24px
+  font-family: 'Helvetica', sans-serif
+  font-weight: 400px
+  font-size: 15px
+  line-height: 18px
+  &-mobile
+    display: none
+    max-width: 728px
+    background: #4B4B4F
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+    padding: 24px
+    font-family: 'Helvetica', sans-serif
+    font-weight: 400px
+    font-size: 13px
+    line-height: 18px
+   
+  
+.transport
+  &__subtitle
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../images/step-2.svg')
+      width: 24px
+      height: 24px
+      left: 0
+      top: 3px
+  &__inner
+    display: flex
+  &__label
+    display: flex
+    flex-direction: column   
+  &__select
+    appearance: none
+    width: 172px
+    height: 44px
+    padding-left: 14px
+    background: url('../images/arrow-down.svg') no-repeat 145px #fff
+    &::after
+      right: 15px
+      
+
+.transport__label-inner
+  margin-bottom: 40px  
+.transport__label-inner + .transport__label-inner 
+  margin-left: 12px  
+  
+img
+  position: relative
+  left: 86%
+  top: 23px
+  z-index: 1
+  transform: rotate(0deg)
+.active
+  transform: rotate(180deg)  
+
+.goods
+  &__subtitle
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../images/step-3.svg')
+      width: 24px
+      height: 24px
+      left: 0
+      top: 3px
+ 
+  &__label
+    display: flex
+    flex-direction: column
+  &__select
+    width: 356px
+    height: 44px
+    margin-bottom: 16px
+    margin-top: 8px 
+  &__inner
+    margin-bottom: 16px 
+  &__input
+     width: 172px
+     height: 44px 
+     padding: 14px
+
+  &__input::placeholder
+    font-family: 'Helvetica', sans-serif
+    font-weight: 400px
+    font-size: 15px
+    line-height: 18px
+    color: #CFCFCF
+      
+
+.description
+  font-family: 'Helvetica', sans-serif
+  font-weight: 400
+  font-size: 13px
+  line-height: 16px
+  margin-bottom: 8px    
+
+.ui-state-active, .ui-widget-content .ui-state-active
+  background: #EF483E
+  border: none
+  font-weight: 400
+  font-family: 'Helvetica', sans-serif
+  font-size: 14px
+  line-height: 17px 
+  
+.filter  
+  font-family: 'Helvetica', sans-serif
+  font-size: 15px
+  line-height: 18px 
+
+.ui-menu .ui-menu-item-wrapper
+  font-family: 'Helvetica', sans-serif
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+
+
+
+   
+
+.ui-selectmenu-text
+  font-family: 'Helvetica', sans-serif
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: #000000   
+
+#ui-id-1-button, #ui-id-2-button
+  width: 172px
+  height: 44px
+  position: relative
+  padding-top: 11px
+  
+   
+
+#ui-id-3-button
+  position: relative
+  appearance: none
+  width: 356px
+  height: 44px
+  padding-top: 11px
+  padding-right: 14px
+  margin-bottom: 16px 
+  
+
+#ui-id-4-button, #ui-id-5-button
+  width: 172px
+  height: 44px
+  padding-top: 11px  
+#ui-id-4-button
+  position: relative
+  appearance: none
+  &::after
+    content: ''
+    position: absolute
+    background-image: url('../images/arrow-down.svg') 
+    background-repeat: no-repeat
+    width: 8px
+    height: 8px
+    top: 17px
+    right: 14px 
+
+.checkbox
+  margin-bottom: 40px
+  position: relative
+
+.checkbox__input
+  display: inline-block
+  appearance: none
+  position: absolute
+
+.checkbox__input:checked + .checkbox__label:before  
+  background-color: #EF483E
+    
+.checkbox__label
+  font-family: 'Helvetica', sans-serif
+  font-weight: 400
+  font-size: 13px
+  line-height: 16px
+  padding-left: 36px
+  display: inline-block
+  color: #fffff
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    display: block
+    width: 24px
+    height: 24px
+    border: 2px solid #FFFFFF
+    top: -3px
+    left: 0
+    z-index: 1
+
+
+.time
+  max-width: 728px
+  &__inner
+    max-width: 728px
+    display: flex
+    justify-content: space-between
+.adress
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 728px
+  height: 44px
+  background-color: #4B4B4F
+  &__description
+    padding-left: 36px
+    position: relative
+    padding-top: 8px
+    color: #CFCFCF
+    
+
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../images/subtract-red.svg')
+      width: 16px
+      height: 16px   
+      top: 8px
+      left: 12px    
+    &-not
+      &::before
+        content: ''
+        position: absolute
+        background-image: url('../images/subtract-white.svg')
+        width: 16px
+        height: 16px   
+        top: 8px
+        left: 12px  
+
+
+
+.adress + .adress
+  margin-top: 4px
+  margin-bottom: 16px  
+
+
+.adress__choose-button
+  margin: 10px 10px 10px 0
+  background-color: #717174
+  border: none
+  text-transform: uppercase
+  font-family: 'Helvetica', sans-serif
+  font-size: 13px
+  line-height: 16px
+  color: #ffffff
+  padding: 4px 14px 
+  border-radius: 2px 
+  cursor: pointer
+  &--not
+    opacity: 0.3
+
+textarea
+  width: 728px
+  height: 80px
+  padding: 14px 14px 0 14px
+  font-family: 'Helvetica', sans-serif
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  margin-bottom: 129px
+
+textarea::placeholder
+  font-family: 'Helvetica', sans-serif
+  color: #CFCFCF
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+
+.input__mobile-temperature
+  width: 155px
+  height: 44px
+  padding: 13px
+
+.temperature__inner
+  display: none
+.active
+  display: block
+.border-none
+  border: none  
+   
+
+@import 'media'     

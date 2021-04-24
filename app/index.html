@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <main class="main">
+      <div class="container">
+        <div class="rout">
+          <h1 class="title rout__title">FTL: Прямая машина</h1>
+          <p class="subtitle rout__subtitle">Маршрут</p>
+          <label class="label rout__label"> Откуда
+            <input class="input rout__input" type="text" required>
+            <div class="required">
+              <p class="required__text">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</p>
+            </div>
+          </label>
+          <label class="label rout__label">Куда
+            <input class="input rout__input" type="text">
+          </label>
+        </div>
+
+        <div class="transport">
+          <p class="subtitle transport__subtitle">Транспорт</p>
+          <div class="transport__inner">
+            <div class="transport__label-inner transport__label-inner--grey ">
+              <p class="description transport__description">Грузоподъемность</p>
+              <img class="weight" src="images/arrow-down.svg" alt="arrow">
+              <select class="filter select transport__select">
+                <option value="1" >Не выбрана</option>
+                <option value="2">Вариант 1</option>
+                <option value="3">Вариант 2</option>
+                <option value="4">Вариант 3</option>
+                <option value="5">Вариант 4</option>
+                <option value="6">Вариант 5</option>
+              </select>
+            
+          </div>
+            
+             <div class="transport__label-inner">
+              <p class="description transport__description">Способ погрузки</p>
+              <img class="shipment" src="images/arrow-down.svg" alt="arrow">
+                <select class="filter select transport__select" >
+                  <option value="Не выбрана" selected>Задняя</option>
+                  <option value="2">Вариант 1</option>
+                  <option value="3">Вариант 2</option>
+                  <option value="4">Вариант 3</option>
+                  <option value="5">Вариант 4</option>
+                  <option value="6">Вариант 5</option>
+                </select>
+              
+             </div>
+          </div>
+        </div>
+
+
+        <div class="goods">
+          <p class="subtitle goods__subtitle">Маршрут</p>
+          <p class="description transport__description">Тип груза</p>
+            <select class="filter select goods__select">
+              <option value="1">Не выбрано</option>
+              <option value="2">Вариант 1</option>
+                  <option value="3">Вариант 2</option>
+                  <option value="4">Вариант 3</option>
+                  <option value="5">Вариант 4</option>
+                  <option value="6">Вариант 5</option>
+            </select>
+         
+          <div class="transport__inner">
+            <div class="goods__inner transport__label-inner">
+              <p class="description goods__description">Класс опасности</p>
+              <select class="filter select transport__select">
+                <option value="1" class="disabled">Класс-5  оки....  </option>
+                <option value="2">Класс-5</option>
+                <option value="3">Класс-5</option>
+                <option value="4">Класс-5</option>
+                <option value="5">Класс-5</option>
+                
+              </select>
+           
+          </div>
+            
+             <div class="goods__inner transport__label-inner">
+              <p class="description goods__description">Объявленная ценность, ₽</p>
+              <input class="input goods__input" placeholder='&#8805;1'>
+                 
+            </input>
+            
+             </div>
+             
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="checkbox__input" id="checkbox">
+            <label class="checkbox__label" for="checkbox">Требуется температурный режим</label>
+            
+          </div>
+
+
+
+          <div class="temperature__inner">
+            <div class="transport__inner temperature">
+              <div class="transport__label-inner">
+                <p class="description transport__description">от &#176;С</p>
+                <input class="input input__mobile-temperature">
+                 
+                </input>
+              
+            </div>
+              
+               <div class="transport__label-inner temperature">
+                <p class="description transport__description">До &#176;С</p>
+                  <input class="input input__mobile-temperature" > 
+               </input>
+                
+               </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="time">
+          <p class="subtitle rout__subtitle">Время</p>
+          <div class="time__inner">
+            <p class="description time__description">Когда прибыть на точку</p>
+            <p class="description distance__description">720 км в день</p>
+          </div>
+          <div class="adress">
+            <p class="description adress__description">Адрес не указан</p>
+            <button class="description adress__choose-button">Не выбрано</button>
+          </div>
+          <div class="adress">
+            <p class="description adress__description adress__description-not">Адрес не указан</p>
+            <button class="description adress__choose-button adress__choose-button--not ">Не выбрано</button>
+          </div>
+          <p class="description time__description">Комментарий к заказу</p>
+          <textarea placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+        </div>
+
+        <div class="required-mobile">
+          <p class="required__text ">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</p>
+        </div>
+        
+      </div>
+
+    </main>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
