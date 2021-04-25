@@ -104,6 +104,7 @@ img
   top: 23px
   z-index: 1
   transform: rotate(0deg)
+  
 .active
   transform: rotate(180deg)  
 
@@ -195,6 +196,15 @@ img
   padding-top: 11px
   padding-right: 14px
   margin-bottom: 16px 
+  &::after
+    content: ''
+    position: absolute
+    background-image: url('../images/arrow-down.svg') 
+    background-repeat: no-repeat
+    width: 8px
+    height: 8px
+    top: 17px
+    right: 14px
   
 
 #ui-id-4-button, #ui-id-5-button
@@ -225,6 +235,10 @@ img
 
 .checkbox__input:checked + .checkbox__label:before  
   background-color: #EF483E
+  border-color: #EF483E
+.checkbox__input:checked + .checkbox__label:after
+  opacity: 1
+
     
 .checkbox__label
   font-family: 'Helvetica', sans-serif
@@ -245,6 +259,17 @@ img
     top: -3px
     left: 0
     z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    background: url('../images/checkmark.svg') no-repeat
+    background-size: 16px 16px
+    top: 0
+    left: 3px
+    z-index: 2
+    opacity: 0
+    width: 16px
+    height: 16px  
 
 
 .time
